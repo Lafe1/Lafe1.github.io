@@ -1,0 +1,240 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+body
+	background: url('../img/bg.jpg')
+
+.container
+	width: 800px
+	margin: 0 auto
+	padding: 0
+
+.s-white
+	background-color: #ffffff
+	width: 1000px
+	margin: 0 auto
+
+.s-gray
+	background-color: #f7f8fa
+	width: 1000px
+	margin: 0 auto
+
+.s-yellow
+	background-color: #fff4b3
+	margin: 0 auto
+
+.s-dark
+	background-color: #000000
+
+ul
+	padding-left: 15px
+
+.main-head
+	width: 1000px
+	margin: 0 auto
+	.logo-line
+		width: 100%
+		height: 62px
+		.logo
+			display: block
+			height: 100%
+			img
+				margin: 20px 0
+	.header-content
+		width: 100%
+		.headline
+			background: url('../img/bg-header.jpg')
+			background-size: cover
+			width: 100%
+			height: 420px
+		h1, h2
+			text-align: center
+			color: #ffffff
+			font-family: Arial, sans-serif;
+			margin: 0
+		h1
+			font-size: 50px
+			font-weight: bold
+			line-height: 100px
+		h2
+			font-size: 30px
+			font-weight: normal
+			line-height: 60px
+			padding-top: 47px
+		.mac-content
+			display: block
+			position: relative
+			img
+				display: block
+				margin: 20px auto 0 auto
+			a
+				display: block
+				font-size: 15px
+				line-height: 15px
+				text-decoration: none
+				border-bottom: 1px solid
+				position: absolute
+				color: #5c37ef
+				width: 267px
+				top: 165px
+				left: 50%
+				margin-right: -50%
+				transform: translate(-50%, 0)
+
+.s-links
+	padding: 255px 0 30px
+	font-size: 16px
+	line-height: 24px
+	span
+		color: #cdcdcd
+
+.s-points
+	height: 120px
+	text-align: center
+	p
+		font-size: 16px
+		padding-top: 32px
+		margin-bottom: 0
+		a
+			border-bottom: 1px solid
+			text-decoration: none
+	h2
+		font-size: 24px
+		font-weight: normal
+
+.s-regulations
+	height: 350px
+	padding-bottom: 30px
+	h3
+		font-size: 24px
+		line-height: 24px		
+		padding-top: 40px
+		font-weight: normal
+	.left-column
+		float: left
+		width: 410px
+		padding-right: 20px
+		font-size: 16px
+		line-height: 24px
+		li
+			padding-top: 12px
+	.right-column
+		span
+			display: block
+			margin-top: 30px
+			font-size: 40px
+			line-height: 36px
+			color: #1ea01e
+			font-weight: bold
+		p
+			padding-top: 12px
+
+.s-form
+	text-align: center
+	.container
+		background-color: #fff4b3
+		h2
+			padding: 30px 0 
+			text-transform: uppercase
+			font-size: 16px
+			font-weight: bold
+		form
+			width: 520px
+			margin: 0 auto
+			label
+				text-align: left
+				font-size: 14px
+				width: 160px
+				padding: 0
+				margin: 0
+			input
+				width: 355px
+				height: 37px
+				border: 1px #a6acb2 solid
+				border-radius: 5px
+				padding: 0 14px 0
+				margin: 0 0 15px
+				&:focus
+					 box-shadow: 0 0 10px #58cdf4
+				&::placeholder
+					padding-left: 0
+					color: #b2b2b2
+			.button
+				text-align: left
+				width: 160px
+				height: 40px
+				background-color: #b6d88a
+				border: 1px #b6d88a solid
+				border-radius: 5px
+				color: #ffffff
+				text-align: center
+				margin-left: -30px
+				margin-bottom: 35px
+				&:focus
+					outline: 0
+
+.s-still
+	height: 155px
+	p
+		padding-top: 30px
+		font-size: 16px
+		line-height: 24px
+
+footer
+	margin: 0 auto
+	height: 60px
+	width: 100%
+	.logo-line
+		width: 100%
+		height: 62px
+		.logo
+			display: block
+			height: 100%
+			img
+				margin: 20px 0
+
+
+
+
+
+
+
+
+@import "media" // Always at the end
