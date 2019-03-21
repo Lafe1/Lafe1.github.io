@@ -53,8 +53,6 @@ body
 
 .s-gray
 	background-color: #f7f8fa
-	width: 1000px
-	margin: 0 auto
 
 .s-yellow
 	background-color: #fff4b3
@@ -128,6 +126,8 @@ ul
 .s-points
 	height: 120px
 	text-align: center
+	.container
+		background-color: #f7f8fa
 	p
 		font-size: 16px
 		padding-top: 32px
@@ -138,6 +138,7 @@ ul
 	h2
 		font-size: 24px
 		font-weight: normal
+		padding-bottom: 40px
 
 .s-regulations
 	height: 350px
@@ -200,8 +201,8 @@ ul
 				text-align: left
 				width: 160px
 				height: 40px
-				background-color: #b6d88a
-				border: 1px #b6d88a solid
+				background-color: #0d972b
+				border: 1px #0d972b solid
 				border-radius: 5px
 				color: #ffffff
 				text-align: center
@@ -209,6 +210,9 @@ ul
 				margin-bottom: 35px
 				&:focus
 					outline: 0
+				&[disabled]			
+					background-color: #b6d88a
+					border: 1px #b6d88a solid
 
 .s-still
 	height: 155px
