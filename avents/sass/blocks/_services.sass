@@ -1,0 +1,70 @@
+.services
+	padding-top: 140px
+	background-color: $bg-color
+	&__tabs
+		padding-left: 0
+		list-style-type: none
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 0
+	&__tab
+		width: 220px
+		height: 50px
+		border: 1px solid $main-color
+		font-size: 16px
+		font-weight: 500
+		color: $main-color
+		text-transform: uppercase
+		text-align: center
+		line-height: 46px
+		//transform: skewX(-25deg)
+		margin: 0 5px
+		cursor: pointer
+		transition: 0.5s all
+		&:hover
+			box-shadow: 3px 3px 20px $main-color
+			border: none
+		div
+			//transform: skewX(25deg)
+		&_active
+			background-color: $main-color
+			color: $bg-color
+			border: none
+	&__content
+			margin-top: 40px
+			padding-bottom: 40px
+			display: none
+			&_active
+				display: block
+			.subtitle
+				text-align: center
+				margin-top: 20px
+				color: $main-color
+				font-size: 28px
+				font-weight: 700
+			hr
+				border: none
+				color: red
+				background-color: #ededed
+				height: 3px
+				margin: 50px 0
+	&__item-wrapper
+		text-align: justify
+		list-style: none
+		margin-top: 20px
+		padding-left: 0
+		font-size: 18px
+		div
+			margin-bottom: 30px
+			font-size: 20px
+	&__item
+		&::after
+			content: ''
+			display: block
+			margin-top: 20px
+			margin-bottom: 30px
+			background-color: $main-color
+			width: 100px
+			height: 6px
+			border-radius: 10px

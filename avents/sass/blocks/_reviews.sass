@@ -1,0 +1,44 @@
+.reviews
+	padding: 70px 0 60px
+	background-color: $bg-color
+	.title
+		margin-bottom: 70px
+	hr
+		border: none
+		color: red
+		background-color: $two-bg-color
+		height: 2px
+		margin: 50px 0
+	&-item
+		display: flex
+		justify-content: center
+		&:nth-of-type(2n)
+			text-align: right
+			.reviews-item__img-wrapper
+				margin-right: 0
+			.reviews-item__name, .reviews-item__label, .reviews-item__descr
+				margin-right: 60px
+		&__img-wrapper
+			margin-right: 60px
+			padding-top: 3px
+			img
+				width: 169px
+				height: 169px
+				border-radius: 100%
+				border: 4px solid $main-color
+		&__name
+			font-size: 18px
+			font-weight: 700
+			color: #0d0d0d
+		&__label
+			font-size: 14px
+			font-weight: 300
+			color: $main-color
+			margin-top: 10px
+		&__descr
+			font-size: 16px
+			font-weight: 500
+			color: #0d0d0d
+			margin-top: 19px
+			span
+				color: $main-color

@@ -1,0 +1,37 @@
+button:active, button:focus
+	outline: none
+
+.button
+	width: 150px
+	height: 30px
+	border-radius: 5px
+	border: none
+	background-color: $main-color
+	color: $bg-color
+	font-size: 12px
+	font-weight: 500
+	text-transform: uppercase
+	margin-top: 5px
+	cursor: pointer
+	transition: 0.5s all
+	&:hover
+		background-color: $second-color
+	&:active
+		transform: translateY(2px) translateX(2px)
+		background-color: $second-color
+	&-main
+		display: flex
+		height: 60px
+		width: 250px
+		margin-top: 30px
+		position: absolute
+		left: calc(50% - 125px)
+		text-align: center
+		justify-content: center
+		align-items: center
+		font-size: 18px
+	&_submit
+		width: 100%
+		height: 55px
+		font-size: 16px
+		

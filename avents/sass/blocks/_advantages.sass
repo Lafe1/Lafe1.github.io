@@ -1,0 +1,44 @@
+.advantages
+	min-height: 470px
+	padding: 70px 0 78px 0
+	background-color: $bg-color
+	&__wrapper
+		margin-top: 65px
+		display: flex
+		justify-content: space-between
+	&__item
+		position: relative
+		width: 235px
+		height: 270px
+		display: flex;
+		flex-direction: column
+		align-items: center
+		img
+			max-width: 30%
+		.button
+			position: absolute
+			bottom: 0
+	&__subtitle
+		position: relative
+		margin-top: 38px
+		color: #0d0d0d
+		font-size: 18px
+		font-weight: 700
+		&::after
+			content: ''
+			position: absolute
+			height: 2px
+			width: 100px
+			bottom: -10px
+			left: calc(50% - 50px)
+			background-color: $main-color
+	&__descr
+		margin-top: 25px
+		color: #0d0d0d
+		font-size: 14px
+		font-weight: 300
+		text-align: center
+		a
+			color: #ff0000
+			text-decoration: underline
+			font-weight: 500

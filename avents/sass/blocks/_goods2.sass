@@ -1,0 +1,138 @@
+.goods
+	padding-top: 140px
+	padding-bottom: 100px
+	background-color: $bg-color
+	&__tabs
+		padding-left: 0
+		list-style-type: none
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 0
+	&__tab
+		width: 220px
+		height: 50px
+		border: 1px solid $main-color
+		font-size: 16px
+		font-weight: 500
+		color: $main-color
+		text-transform: uppercase
+		text-align: center
+		line-height: 46px
+		//transform: skewX(-25deg)
+		margin: 0 5px
+		cursor: pointer
+		transition: 0.5s all
+		&:hover
+			box-shadow: 3px 3px 20px $main-color
+			border: none
+		div
+			//transform: skewX(25deg)
+		&_active
+			background-color: $main-color
+			color: $bg-color
+			border: none
+	&__content
+		margin-top: 60px
+		display: none
+		justify-content: space-between
+		flex-wrap: wrap
+		&_active
+			display: flex
+	&-item
+		display: flex
+		justify-content: space-between
+		padding: 20px 20px 26px 20px
+		width: 100%
+		min-height: 300px
+		border: 1.5px solid $main-color
+		margin-bottom: 20px
+		overflow: hidden
+		&__img
+			display: block
+			margin: 0 auto
+			width: 270px
+		&__subtitle
+			margin-top: 5px
+			font-size: 20px
+			font-weight: 700
+			color: #0d0d0d
+			text-align: center
+		&__descr
+			margin-top: 16px
+			margin-left: 20px
+			font-size: 16px
+			font-weight: 300
+			color: #0d0d0d
+			text-align: justify
+			&-wrapper
+				width: 70%
+		&__details
+			display: none
+			margin-top: 16px
+			margin-left: 20px
+			font-size: 16px
+			font-weight: 300
+			color: #0d0d0d
+			text-align: justify
+			&_active
+				display: block
+		&__link
+			display: block
+			margin-top: 17px
+			margin-left: 20px
+			font-size: 14px
+			font-weight: 500
+			color: $main-color
+			text-decoration: underline
+			text-align: left
+			text-transform: uppercase
+			&:hover
+				color: $main-color
+		&__footer
+			display: flex
+			justify-content: space-between
+		&__prices
+			text-align: right
+		&__old-price
+			font-size: 14px
+			font-weight: 300
+			color: #555555
+			text-decoration: line-through
+		&__price
+			font-size: 20px
+			font-weight: 700
+			color: #050505
+		&__wrapper
+			display: flex
+			width: 100%
+		&__content
+			width: 30%
+			margin-right: 40px
+			transform: translateX(0%)
+			transition: 0.3s all
+		&__list
+			margin-left: 20px
+			font-size: 16px
+			font-weight: 500
+			color: #0d0d0d
+			transition: 0.3s all
+			text-align: justify
+			&_active
+				transform: translateX(-100%)
+				margin-left: 0px
+			li
+				position: relative
+				font-size: 14px
+				font-weight: 300
+				color: #555555
+				margin-bottom: 20px
+				list-style: none
+				&::before
+					content: ''
+					position: absolute
+					width: 5px
+					height: 5px
+					background-color: $main-color
+					left: -14px
+					top: 8px
